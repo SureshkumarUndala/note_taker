@@ -17,12 +17,15 @@ const Login = () => {
       return alert("Invalid Email")
     }
 
-    axios.post("http://localhost:8080/login", user)
+    axios.post("https://note-taker-api-fhnh.onrender.com/login", user)
       .then((response) => {
-        console.log(response.data)
+       
+   
+     
+
 
         localStorage.setItem("token", response.data.token)
-        localStorage.setItem("userInfo", JSON.stringify(response.data.userinfo))
+       
 
 
         alert(response.data.message)

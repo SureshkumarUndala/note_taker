@@ -7,9 +7,10 @@ import Navbar from "../components/navbar"
 
 const Homepage = () => {
   const [posts, setPosts] = useState([])
+  console.log(posts)
 
   useEffect(() => {
-    fetch("/allposts", {
+    fetch("https://note-taker-api-fhnh.onrender.com/mynotes", {
       method: "get",
       headers: {
         "Authorization": "bearer " + localStorage.getItem("token")

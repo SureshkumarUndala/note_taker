@@ -1,1 +1,7 @@
 
+input{
+    outline: none;
+    border: none;
+}
+*{font-family: 'Montserrat', sans-serif;
+}

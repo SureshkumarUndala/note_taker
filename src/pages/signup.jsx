@@ -18,7 +18,7 @@ const Signup = () => {
       return alert("Invalid Email")
     }
     
-    axios.post("http://localhost:8080/register",user)
+    axios.post("https://note-taker-api-fhnh.onrender.com/register",user)
     .then((response)=>{
    
       alert(response.data.status)
