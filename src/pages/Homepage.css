@@ -5,13 +5,17 @@
 .Search{
     width: 99%;
     display: flex;
-    justify-content: center;
+   margin-left: 80px;
+
+  
    
     
 }
 .Search input {
     width: 70%;
-    padding: 2px 4px;
+    padding: 2px 2px;
+    border: 1px solid black;
+    border-radius: 8px;
   
 }
 .Search button{
@@ -28,42 +32,43 @@
 .tasks{
     width: 90%;
     padding:2px;
-    background-color: rgb(13, 116, 26);
-    border: 2px solid white;
-    height: auto;
+   height: auto;
+   overflow: auto;
+
+   
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    align-items: center;
+
+
+
+    
 
   
 }
 
-.tasks .head{
-
-   
-
-    width: 97%;
-    height: 20px;
 
 
-
-}
-.tasks .body {
+.tasks .postBody {
     width: 90%;
-    height: auto;
-    overflow: hidden;
+    height: 10%;
+    margin-bottom: 10px;
+    background-color: rgb(8, 129, 138);
+    box-sizing: border-box;
+    padding: 10px;
+
 }
 
 
 
 
-.tasks .body h3{
+.tasks  h3{
     margin-left: 10px;
    
 
 }
-.tasks .body P{
+.tasks  P{
     font-weight: bolder;
     margin-left: 10px;
 }

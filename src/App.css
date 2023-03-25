@@ -4,4 +4,6 @@ input{
     border: none;
 }
 *{font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+ 
 }

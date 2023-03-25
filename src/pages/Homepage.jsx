@@ -7,8 +7,12 @@ import Navbar from "../components/navbar"
 
 const Homepage = () => {
   const [posts, setPosts] = useState([])
+  const [query, setquery] = useState('')
   console.log(posts)
+  
+  
 
+  
   useEffect(() => {
     fetch("https://note-taker-api-fhnh.onrender.com/mynotes", {
       method: "get",
@@ -20,29 +24,42 @@ const Homepage = () => {
       .then(data => setPosts(data.posts))
 
 
-
-  }, [])
+  }, [posts])
   return (
-    <div style={{backgroundColor:"black", width:"100%", height:"100vh", color:"white"}}>
+    <div style={{width:"100%", height:"auto", color:"white", boxSizing:"border-box"}}>
       <div className='NavBox'>
       <Navbar/>
       </div>
     
       <div className='Search' >
-        <input placeholder='search' />
+        <input placeholder='search' onChange={(e)=>setquery(e.target.value)}/>
         <button  >Search</button>
       </div>
 
       <div className='tasks'>
-        <div  className='head'>
-          <span style={{marginLeft:"20px"}}>March 1, 2023 1:13:21 PM</span>
+      {/* {posts.filter(post=> post.title.toLowerCase().includes(query)).map(post=>{
+    return(
+      
+    )
+  })} */}
+       
+          {posts.filter(post=> post.title.toLowerCase().includes(query)).map((post,index)=>{
+            return(
+              <div  className='postBody' key={index}>
+                <div  className='head'>
+          <span style={{marginLeft:"20px"}}>{post.createdAt
+}</span>
         </div>
       
-        <div  className='body'>
-          <h3>Mongo Db</h3>
-          <p>hi hello</p>
+              <h3>{post.title}</h3>
+              <p>{post.description}</p>
+              </div>
+
+            )
+
+          })}
         
-        </div>
+      
       </div>
 
     </div>

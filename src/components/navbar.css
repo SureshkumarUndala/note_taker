@@ -13,23 +13,27 @@
 .Home{
     display: flex;
     width: 100px;
+    cursor: pointer;
 
 
 }
 .Addpost{
     display: flex;
     width: 100px;
+    cursor: pointer;
 
 }
 .Delete{
     display: flex;
     width: 100px;
+    cursor: pointer;
 
 }
 .export{
     display: flex;
     width: 100px;
     flex-grow: 0.9;
+    cursor: pointer;
 
 }
 h4{
