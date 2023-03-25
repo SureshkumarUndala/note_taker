@@ -1,0 +1,70 @@
+.NavBox{
+    margin-bottom: 50px;
+}
+
+.Search{
+    width: 99%;
+    display: flex;
+    justify-content: center;
+   
+    
+}
+.Search input {
+    width: 70%;
+    padding: 2px 4px;
+  
+}
+.Search button{
+    margin-left: 10px;
+    width: 100px;
+    height:39px;
+    background-color:rgb(13, 116, 26);
+    color: white;
+    font-weight: bold;
+    margin-bottom: 50px;
+
+
+}
+.tasks{
+    width: 90%;
+    padding:2px;
+    background-color: rgb(13, 116, 26);
+    border: 2px solid white;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+  
+}
+
+.tasks .head{
+
+   
+
+    width: 97%;
+    height: 20px;
+
+
+
+}
+.tasks .body {
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+}
+
+
+
+
+.tasks .body h3{
+    margin-left: 10px;
+   
+
+}
+.tasks .body P{
+    font-weight: bolder;
+    margin-left: 10px;
+}
+
